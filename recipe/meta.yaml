@@ -1,5 +1,5 @@
 {% set name = "gsffile" %}
-{% set version = "0.4.9" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gsffile-{{ version }}.tar.gz
-  sha256: 5dec9b9472ebdd59237b90941d9b43e2a94a6177633dad328def02e9c83a0fe1
+  sha256: bc8005e1da790837efb2d23654d192681326940a72c07a884f66605eda70e3f4
 
 build:
   noarch: python
