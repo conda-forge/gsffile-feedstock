@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "gsffile" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gsffile-{{ version }}.tar.gz
-  sha256: bc8005e1da790837efb2d23654d192681326940a72c07a884f66605eda70e3f4
+  sha256: ab5dd83eae4e260757c3189c4e2ad8a55283fcfa54e9512bba5cd4c01927f230
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
