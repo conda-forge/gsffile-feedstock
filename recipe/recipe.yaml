@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - hatchling
     - hatch-vcs
     - pip
@@ -33,8 +33,8 @@ tests:
       imports:
         - gsffile
       pip_check: true
-
       python_version: ${{ python_min }}.*
+
 about:
   summary: Read and write Gwyddion Simple Field files
   license: MIT
