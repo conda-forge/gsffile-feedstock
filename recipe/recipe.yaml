@@ -1,9 +1,9 @@
 schema_version: 1
 
 context:
-  python_min: 3.10
+  python_min: '3.10'
   name: gsffile
-  version: 0.5.1
+  version: "0.5.3"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gsffile-${{ version }}.tar.gz
-  sha256: ab5dd83eae4e260757c3189c4e2ad8a55283fcfa54e9512bba5cd4c01927f230
+  sha256: a4b35156fe580b122cd51372eea2c6a2f5a52c760983e63ab474148449d0c0c9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
