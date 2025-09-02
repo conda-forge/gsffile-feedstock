@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: '3.10'
   name: gsffile
-  version: "0.5.3"
+  version: "0.5.4"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gsffile-${{ version }}.tar.gz
-  sha256: a4b35156fe580b122cd51372eea2c6a2f5a52c760983e63ab474148449d0c0c9
+  sha256: 851a20d64cbeda3310d32d2cf7bce28955523dc45f31d7d4e1c292ac32e41469
 
 build:
   number: 0
