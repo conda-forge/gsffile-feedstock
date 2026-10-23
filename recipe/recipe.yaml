@@ -13,14 +13,14 @@ source:
   sha256: 2ef6dbd911679fead6b2be8addb0f9c72e8fc2888da26e56e4c815a509fbda78
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
+    - hatchling >=1.26
     - hatch-vcs
     - pip
   run:
