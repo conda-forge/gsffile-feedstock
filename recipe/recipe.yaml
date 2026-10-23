@@ -1,7 +1,6 @@
 schema_version: 1
 
 context:
-  python_min: '3.10'
   name: gsffile
   version: "0.5.5"
 
@@ -33,7 +32,9 @@ tests:
       imports:
         - gsffile
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Read and write Gwyddion Simple Field files
